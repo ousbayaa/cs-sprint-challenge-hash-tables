@@ -4,6 +4,14 @@ def has_negatives(a):
     """
     # Your code here
 
+    numbs = {}
+    result = []
+
+    for number in a:
+        numbs[number] = 1
+        if number != 0 and -number in numbs:
+            result.append(abs(number))
+
     return result
 
 
